@@ -53,6 +53,27 @@
   .delay-3 { animation-delay: 0.4s; opacity: 0; }
   .delay-4 { animation-delay: 0.55s; opacity: 0; }
 
+  /* ── URGENCY BAR ── */
+  .urgency-bar {
+    background: var(--gold);
+    color: var(--ink);
+    text-align: center;
+    padding: 11px 20px;
+    font-size: 11pt;
+    font-weight: 700;
+    letter-spacing: 0.3px;
+    position: relative;
+    z-index: 99;
+  }
+  .urgency-bar #countdown {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 15pt;
+    letter-spacing: 3px;
+    background: rgba(0,0,0,0.12);
+    padding: 2px 10px;
+    margin-left: 6px;
+  }
+
   /* ── TICKER ── */
   .ticker-wrap {
     background: var(--red);
@@ -823,6 +844,11 @@ src="https://www.facebook.com/tr?id=1654390602417785&ev=PageView&noscript=1"
 </head>
 <body>
 
+<!-- URGENCY BAR -->
+<div class="urgency-bar">
+  📖 Ebook + 🎧 Audiobook &nbsp;·&nbsp; 18 Capítulos Práticos &nbsp;·&nbsp; Acesso Imediato &nbsp;·&nbsp; Garantia de 7 Dias &nbsp;·&nbsp; Método Comprovado
+</div>
+
 <!-- TICKER -->
 <div class="ticker-wrap">
   <div class="ticker-inner">
@@ -842,7 +868,6 @@ src="https://www.facebook.com/tr?id=1654390602417785&ev=PageView&noscript=1"
 <!-- NAV -->
 <nav>
   <div class="nav-logo">LEI DA <span>TRAÇÃO</span></div>
-  <a href="https://pay.hotmart.com/R105244845Y" class="nav-cta">Quero o Combo — R$ 67</a>
 </nav>
 
 <!-- HERO -->
@@ -887,6 +912,11 @@ src="https://www.facebook.com/tr?id=1654390602417785&ev=PageView&noscript=1"
         </div>
       </div>
       <div class="fade-up delay-4">
+        <div style="display:inline-flex; align-items:center; gap:12px; background:rgba(212,160,32,0.07); border:1px solid rgba(212,160,32,0.18); padding:10px 18px; margin-bottom:16px;">
+          <span style="font-size:9.5pt; color:rgba(255,255,255,0.45); letter-spacing:1px; text-transform:uppercase;">Valor promocional disponível por</span>
+          <span style="font-family:'Bebas Neue',sans-serif; font-size:22pt; color:var(--gold); letter-spacing:3px; line-height:1;" class="countdown-display">00:00:00</span>
+        </div>
+        <br>
         <a href="https://pay.hotmart.com/R105244845Y" class="cta-btn">
           <span class="price-old">R$ 97</span> Quero por R$ 67 →
         </a>
@@ -906,10 +936,6 @@ src="https://www.facebook.com/tr?id=1654390602417785&ev=PageView&noscript=1"
         <div class="book-type">Audiobook — MP3</div>
         <div class="book-title-small">LEI DA TRAÇÃO EMPRESARIAL</div>
         <div class="book-desc">Narrado com tom de mentor. Ouça no carro, academia ou onde quiser.</div>
-      </div>
-      <div style="text-align:center; margin-top: 8px;">
-        <span style="font-size:9pt; color: rgba(255,255,255,0.25); letter-spacing:2px; text-transform:uppercase;">Combo completo por</span>
-        <div style="font-family:'Bebas Neue',sans-serif; font-size:36pt; color:var(--gold); letter-spacing:2px; line-height:1;">R$ 67</div>
       </div>
     </div>
   </div>
@@ -1167,10 +1193,53 @@ src="https://www.facebook.com/tr?id=1654390602417785&ev=PageView&noscript=1"
         <div class="price-from">De R$ 97</div>
         <div class="price-main"><span>R$</span> 67</div>
         <div class="price-note">Pagamento único · Acesso permanente</div>
+        <div style="background:rgba(212,160,32,0.08); border:1px solid rgba(212,160,32,0.2); padding:14px 20px; margin:16px 0; text-align:center;">
+          <p style="font-size:9.5pt; color:rgba(255,255,255,0.5); letter-spacing:1px; text-transform:uppercase; margin-bottom:6px;">Valor promocional disponível por</p>
+          <div style="font-family:'Bebas Neue',sans-serif; font-size:28pt; color:var(--gold); letter-spacing:4px; line-height:1;" class="countdown-display">00:00:00</div>
+          <p style="font-size:9pt; color:rgba(255,255,255,0.4); margin-top:8px; font-style:italic;">Aproveite enquanto esta condição estiver disponível — é uma boa oportunidade.</p>
+        </div>
         <a href="https://pay.hotmart.com/R105244845Y" class="cta-big">Quero o Combo Agora →</a>
         <div class="guarantee">
           <span class="icon">🛡️</span>
           <p><strong>Garantia incondicional de 7 dias.</strong> Se por qualquer motivo você não gostar, devolvemos 100% do seu dinheiro. Sem perguntas, sem burocracia.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- AUTHORITY -->
+<section style="background: var(--ink2); padding: 100px 40px; border-top: 1px solid rgba(255,255,255,0.06);">
+  <div class="container">
+    <span class="section-label">Quem está por trás deste material</span>
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: center; margin-top: 48px;">
+      <div>
+        <h2 style="font-family:'Fraunces',serif; font-size: clamp(22pt,3vw,34pt); font-weight:900; line-height:1.15; margin-bottom:24px;">
+          Este não é mais um ebook escrito por um <em style="color:var(--gold); font-style:italic;">teórico.</em>
+        </h2>
+        <p style="font-size:11.5pt; color:rgba(255,255,255,0.7); line-height:1.8; margin-bottom:20px;">
+          O conteúdo da Lei da Tração Empresarial foi desenvolvido por um <strong style="color:#fff;">diretor executivo com 15 anos de experiência operacional</strong> à frente de uma das empresas mais reconhecidas do Brasil no setor de eventos e varejo — com presença nacional e internacional.
+        </p>
+        <p style="font-size:11.5pt; color:rgba(255,255,255,0.7); line-height:1.8; margin-bottom:32px;">
+          Os frameworks, ferramentas e estratégias deste ebook não foram tirados de livros. Foram <strong style="color:#fff;">testados, ajustados e validados</strong> dentro de uma operação real — com os mesmos problemas que você enfrenta hoje.
+        </p>
+        <a href="https://pay.hotmart.com/R105244845Y" class="cta-btn" style="font-size:12pt; padding:18px 40px;">Quero aplicar esse método →</a>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 16px;">
+        <div style="background:#111; border:1px solid rgba(255,255,255,0.06); border-left:4px solid var(--red); padding:24px 28px;">
+          <div style="font-family:'Bebas Neue',sans-serif; font-size:32pt; color:var(--red); line-height:1;">+200</div>
+          <div style="font-size:10pt; color:rgba(255,255,255,0.5); letter-spacing:1px; text-transform:uppercase;">Funcionários gerenciados diretamente</div>
+        </div>
+        <div style="background:#111; border:1px solid rgba(255,255,255,0.06); border-left:4px solid var(--gold); padding:24px 28px;">
+          <div style="font-family:'Bebas Neue',sans-serif; font-size:32pt; color:var(--gold); line-height:1;">+50</div>
+          <div style="font-size:10pt; color:rgba(255,255,255,0.5); letter-spacing:1px; text-transform:uppercase;">Localidades com implementação de sistema</div>
+        </div>
+        <div style="background:#111; border:1px solid rgba(255,255,255,0.06); border-left:4px solid var(--red); padding:24px 28px;">
+          <div style="font-family:'Bebas Neue',sans-serif; font-size:32pt; color:var(--red); line-height:1;">15</div>
+          <div style="font-size:10pt; color:rgba(255,255,255,0.5); letter-spacing:1px; text-transform:uppercase;">Anos de experiência em gestão executiva</div>
+        </div>
+        <div style="background:#111; border:1px solid rgba(255,255,255,0.06); border-left:4px solid rgba(255,255,255,0.2); padding:20px 28px;">
+          <p style="font-size:10.5pt; color:rgba(255,255,255,0.6); line-height:1.6; font-style:italic;">"A empresa tinha sérios problemas de fluxo de caixa, funil de vendas e dificuldade nas vendas estratégicas. Apliquei os mesmos métodos que estão neste ebook — e transformamos a operação."</p>
         </div>
       </div>
     </div>
@@ -1213,6 +1282,11 @@ src="https://www.facebook.com/tr?id=1654390602417785&ev=PageView&noscript=1"
     <span class="section-label" style="display:block; text-align:center;">Última chance</span>
     <h2 class="section-title">Daqui a 90 dias, você<br>pode estar em outro patamar.<br><em style="color:var(--gold);">Ou no mesmo lugar.</em></h2>
     <p>A diferença entre esses dois futuros não é sorte, talento ou capital. É tração. E tração começa com uma decisão.</p>
+    <div style="margin: 28px auto; max-width:380px; background:rgba(212,160,32,0.07); border:1px solid rgba(212,160,32,0.18); padding:16px 24px; text-align:center;">
+      <p style="font-size:9.5pt; color:rgba(255,255,255,0.45); letter-spacing:1px; text-transform:uppercase; margin-bottom:6px;">Valor promocional disponível por</p>
+      <div style="font-family:'Bebas Neue',sans-serif; font-size:30pt; color:var(--gold); letter-spacing:4px; line-height:1;" class="countdown-display">00:00:00</div>
+      <p style="font-size:9pt; color:rgba(255,255,255,0.35); margin-top:8px; font-style:italic;">Aproveite enquanto esta condição estiver disponível.</p>
+    </div>
     <a href="https://pay.hotmart.com/R105244845Y" class="cta-btn" style="font-size:15pt; padding:24px 60px;">
       <span class="price-old">R$ 97</span> Quero por R$ 67 →
     </a>
@@ -1239,6 +1313,36 @@ src="https://www.facebook.com/tr?id=1654390602417785&ev=PageView&noscript=1"
       if (!isOpen) item.classList.add('open');
     });
   });
+
+  // Countdown — 24h por sessão, atualiza todos os elementos
+  function startCountdown() {
+    const key = 'ldt_deadline';
+    let deadline = localStorage.getItem(key);
+    if (!deadline) {
+      deadline = Date.now() + 26 * 60 * 1000;
+      localStorage.setItem(key, deadline);
+    }
+    deadline = parseInt(deadline);
+    function update() {
+      const remaining = deadline - Date.now();
+      if (remaining <= 0) {
+        localStorage.removeItem(key);
+        startCountdown();
+        return;
+      }
+      const h = Math.floor(remaining / 3600000);
+      const m = Math.floor((remaining % 3600000) / 60000);
+      const s = Math.floor((remaining % 60000) / 1000);
+      const fmt = v => String(v).padStart(2, '0');
+      const timeStr = `${fmt(h)}:${fmt(m)}:${fmt(s)}`;
+      document.querySelectorAll('.countdown-display').forEach(el => {
+        el.textContent = timeStr;
+      });
+    }
+    update();
+    setInterval(update, 1000);
+  }
+  startCountdown();
 </script>
 
 </body>
